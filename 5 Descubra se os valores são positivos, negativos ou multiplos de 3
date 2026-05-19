@@ -1,0 +1,23 @@
+print("=== DESCUBRA SE OS VALORES SÃO POSITIVOS, NEGATIVOS OU MULTIPLOS DE 3 ===")
+#VARIAVEIS
+positivos = 0
+negativos = 0
+multiplos3 = 0
+
+for i in range(1, 11): #imprimir numero de 1 a 10
+    numero = int(input(f"Digite o {i}º número: "))
+
+    if numero > 0:
+        positivos += 1 # se encontra um numero positivo, vai colocar um na variavel positivos
+
+    elif numero < 0:
+        negativos += 1
+
+    if numero % 3 == 0:
+        multiplos3 += 1
+
+print("\nRESULTADOS:")
+print(f"Positivos: {positivos}")
+print(f"Negativos: {negativos}")
+print(f"Múltiplos de 3: {multiplos3}")
+
