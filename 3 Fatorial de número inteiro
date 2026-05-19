@@ -1,0 +1,7 @@
+print("=== FATORIAL DE NUMERO INTEIRO===")
+x=int(input("Indique o numero:"))
+fat=1  # Variável que vai guardar o resultado do fatorial, começa com 1 porque o fatorial é feito por multiplicações
+
+for i in range(x,0,-1):# x  -> começa no número digitado / 0  -> para antes do 0 / -1 -> diminui de 1 em 1
+    fat *=i  # Multiplica o valor atual de fat por i
+print(fat)
